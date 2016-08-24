@@ -73,7 +73,7 @@ public class FrequencyVisualizer {
         return data;
     }
 
-    public static CategoryDataset createInputDataSet(TreeMap<Double, Integer> classDistributions,float totalRowCount){
+    private static CategoryDataset createInputDataSet(TreeMap<Double, Integer> classDistributions,float totalRowCount){
 
         final DefaultCategoryDataset dataset = new DefaultCategoryDataset( );
         final Object[] keySet = classDistributions.keySet().toArray();
